@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Gym Website Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!----Start Header --->
+<header>
+	<div class="container">
+		<div class="logo">
+		<a href=""><span></span></a>
+		</div>
+		<a href="javascript:void(0)" class="ham-burger">
+		<span></span>
+		<span></span>
+		</a>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="service.html">Services</a></li>
+				<li><a href="classes.html">Classes</a></li>
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="price.html">Price</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<!----End Header --->
+
+
+<!----Start Contact --->
+<section class="contact" id="contact">
+	<br><br><br><br><br><h2><center><i><u><strong><mark>DIRECTIONS & CONTACT DETAILS</mark></i></strong></u></center></h2>
+	<br><br><br><img src="about25.jpg" width="600" height="350" alt="prices"/>   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6872978546094!2d103.86792961475405!3d1.3642907990049808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da165531cee22d%3A0x6ea9f28a2b9ffb1!2sF45%20Training%20Serangoon%20Garden%20South!5e0!3m2!1sen!2ssg!4v1583059493943!5m2!1sen!2ssg" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	<p><strong><i><center>Address: 11 Lichfield Rd, Singapore 556831</p></i></strong></center>
+	<br><p><strong><i><center>Phone</strong></i> : 8161 7592 </center></p>
+	<br><p><strong><i><center>Mail</strong></i> : serangoongardensouth@f45training.sg </center></p><br>
+	
+	
+</section>
+
+<!----End Contact --->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+</script>
+
+<script>
+	$(document).ready(function(){
+	$(".ham-burger").click(function(){
+			$(".nav").toggleClass("open")
+			$(this).toggleClass("active");
+		})
+		$(".accordian-container").click(function(){
+		$(".accordian-container").children(".body").slideUp();
+		$(".accordian-container").removeClass("active")
+		$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+		$(this).children(".body").slideDown();
+		$(this).addClass("active")
+		$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+		})
+})
+</script>
+
+
+
+</body>
+</html>

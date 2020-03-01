@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Gym Website Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!----Start Header --->
+<header>
+	<div class="container">
+		<div class="logo">
+		<a href=""><span></span></a>
+		</div>
+		<a href="javascript:void(0)" class="ham-burger">
+		<span></span>
+		<span></span>
+		</a>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="service.html">Services</a></li>
+				<li><a href="classes.html">Classes</a></li>
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="price.html">Price</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<!----End Header --->
+
+
+
+<!-----Start Service--->
+
+	<section class="service" id="service">
+		<div class="container">
+			<div class="content">
+					<div class="text box">
+						<h2>Services</h2>
+						<p>F45 provides a wide range of equipments that can be used during the
+						<i><strong>45-MINUTE CIRCUIT TRAINING SESSION.</strong></i></p>
+						<img src="about8.jpg" alt="services" width="250" height="300" /> <img src="about7.jpg" alt="services" width="300" height="300" />
+						<img src="about1.jpg" alt="services" width="555" height="350" />
+						<a  href="" class=""></a>
+					</div>
+					
+					<div class="accordian box">
+						<div class="accordian-container active">
+							<div class="head">
+								<h4>Cardiovascular Equipments</h4>
+								<span class="fa fa-angle-down"></span>
+							</div>
+							<div class="body" style="color:white;">
+								<ul>
+								<li>Rowing Machines</li>
+								<li>Stationary Bicycles</li>	
+								<li>Use of Markers</li>
+								<li>Use of Weight Sled</li>
+								</ul>  
+							</div>
+						</div>
+						<div class="accordian-container">
+							<div class="head">
+								<h4>Strength Training Equipments</h4>
+								<span class="fa fa-angle-up"></span>
+							</div>
+							<div class="body" style="color:white;">
+								<ul>
+								<li>Use of Dumbbells</li>
+								<li>Use of Kettle Bells</li>	
+								<li>Use of Weight Plates</li>
+								<li>Use of Weight Sled</li>
+								</ul>  
+							</div>
+						</div>
+						
+						<div class="accordian-container">
+							<div class="head">
+								<h4>Resistance Training Equipments</h4>
+								<span class="fa fa-angle-up"></span>
+							</div>
+							<div class="body" style="color:white;">
+								<ul>
+								<li>Use of Resistance Bands</li>
+								<li>Use of Body Weight Training Methods</li>	
+								</ul>  
+							</div>
+						</div>
+						<div class="accordian-container">
+							<div class="head">
+								<h4>Group Fitness Class</h4>
+								<span class="fa fa-angle-up"></span>
+							</div>
+							<div class="body" style="color:white;">
+								<ul>
+								<li>Working With Buddies Motivates You</li>	
+								<li>Make More Friends With Common Goals</li>
+								</ul>  
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+	</section>
+<!----End Service --->
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+</script>
+
+<script>
+	$(document).ready(function(){
+	$(".ham-burger").click(function(){
+			$(".nav").toggleClass("open")
+			$(this).toggleClass("active");
+		})
+		$(".accordian-container").click(function(){
+		$(".accordian-container").children(".body").slideUp();
+		$(".accordian-container").removeClass("active")
+		$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+		$(this).children(".body").slideDown();
+		$(this).addClass("active")
+		$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+		})
+})
+</script>
+
+
+
+</body>
+</html>

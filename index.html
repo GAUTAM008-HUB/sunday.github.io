@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Gym Website Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!----Start Header --->
+<header>
+	<div class="container">
+		<div class="logo">
+		<a href=""><span></span></a>
+		</div>
+		<a href="javascript:void(0)" class="ham-burger">
+		<span></span>
+		<span></span>
+		</a>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="service.html">Services</a></li>
+				<li><a href="classes.html">Classes</a></li>
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="price.html">Price</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<!----End Header --->
+
+<!----Start Home --->
+
+<section class="home" id="home">
+	<img src="f45bckgrd.png" width="1262" height="605">
+	<a href="#about" class="go-down">
+		<i class="fa fa-angle-down"></i>
+	</a>
+</section>
+
+<!----End Home --->
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+</script>
+
+<script>
+	$(document).ready(function(){
+	$(".ham-burger").click(function(){
+			$(".nav").toggleClass("open")
+			$(this).toggleClass("active");
+		})
+		$(".accordian-container").click(function(){
+		$(".accordian-container").children(".body").slideUp();
+		$(".accordian-container").removeClass("active")
+		$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+		$(this).children(".body").slideDown();
+		$(this).addClass("active")
+		$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+		})
+})
+</script>
+
+
+
+</body>
+</html>
